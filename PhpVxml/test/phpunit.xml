@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="phpunit_bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         syntaxCheck="true"
+         verbose="true"
+         strict="true">
+         <filter>
+		<whitespace>
+			<dir suffix=".php">../library</dir>
+		</whitespace>
+	</filter>
+</phpunit>
