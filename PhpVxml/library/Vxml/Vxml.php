@@ -49,11 +49,36 @@ namespace Vxml;
 class Vxml
 {
 	/**
-	 * The application, defines the root document
+	 * The URI of this document's application root document, if any
 	 *
 	 * @var string
 	 */
 	protected $_application = null;
+
+	/**
+	 * The base URI for this document
+	 *
+	 * A URI which all relative references within the document take as their base.
+	 *
+	 * @var string
+	 */
+	protected $_base = null;
+
+	/**
+	 * The language identifier for this document.
+	 *
+	 * If omitted, the value is a platform-specific default.
+	 *
+	 * @var string
+	 */
+	protected $_lang = 'en-GB';
+
+	/**
+	 * The version of VoiceXML of this document
+	 *
+	 * @var string
+	 */
+	protected $_version = null;
 
 	/**
 	 * Sets the application/root document
@@ -75,5 +100,65 @@ class Vxml
 	public function getApplication()
 	{
 		return $this->_application;
+	}
+
+	/**
+	 * Sets base Uri
+	 *
+	 * @param string $base The base uri
+	 */
+	public function setBase($base)
+	{
+		$this->_base = $base;
+	}
+
+	/**
+	 * Gets base uri
+	 *
+	 * @return string The base uri
+	 */
+	public function getBase()
+	{
+		return $this->_base;
+	}
+
+	/**
+	 * Sets the language
+	 *
+	 * @param string $lang The language
+	 */
+	public function setLang($lang)
+	{
+		$this->_lang = $lang;
+	}
+
+	/**
+	 * Gets the language
+	 *
+	 * @return string The language
+	 */
+	public function getLang()
+	{
+		return $this->_lang;
+	}
+
+	/**
+	 * Sets the version
+	 *
+	 * @param string $version The version
+	 */
+	public function setVersion($version)
+	{
+		$this->_version = $version;
+	}
+
+	/**
+	 * Gets the version
+	 *
+	 * @return string The version
+	 */
+	public function getVersion()
+	{
+		return $this->_version;
 	}
 }
