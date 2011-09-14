@@ -46,6 +46,14 @@
 
 namespace Vxml;
 
+/**
+ * Vxml Document
+ *
+ * @category PhpVxml
+ * @package Vxml\Vxml
+ * @subpackage UnitTests
+ * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+ */
 class Vxml
 {
 	/**

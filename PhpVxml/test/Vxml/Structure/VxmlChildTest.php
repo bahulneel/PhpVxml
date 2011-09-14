@@ -7,6 +7,6 @@ class VxmlChildTest extends \PHPUnit_Framework_TestCase
 	public function testEventHandlerImplementsVxmlChild()
 	{
 		$child = $this->getMock('\Vxml\Structure\EventHandler');
-		$this->assertInstanceof('\Vxml\Structure\VxmlChild', $child);
+		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
 	}
 }
