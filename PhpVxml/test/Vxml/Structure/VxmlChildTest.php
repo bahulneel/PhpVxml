@@ -28,4 +28,11 @@ class VxmlChildTest extends \PHPUnit_Framework_TestCase
 		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
 	}
 
+	public function testScriptImplementsVxmlChild()
+	{
+		$child = $this->getMock('\Vxml\Script');
+		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
+	}
+
+
 }
