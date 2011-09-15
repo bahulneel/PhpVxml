@@ -46,152 +46,100 @@
 namespace Vxml;
 
 /**
- * Vxml Document
+ * Vxml Var
+ *
+ * Srcs Script as Var is a reserved word
  *
  * @category PhpVxml
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Vxml
+class Script implements Structure\VxmlChild
 {
 	/**
-	 * The URI of this document's application root document, if any
+	 * Script Src
 	 *
 	 * @var string
 	 */
-	protected $_application = null;
+	protected $_src = null;
 
 	/**
-	 * The base URI for this document
-	 *
-	 * A URI which all relative references within the document take as their base.
+	 * Script srcexpr
 	 *
 	 * @var string
 	 */
-	protected $_base = null;
+	protected $_srcexpr = null;
 
 	/**
-	 * The language identifier for this document.
-	 *
-	 * If omitted, the value is a platform-specific default.
+	 * Script http-equiv
 	 *
 	 * @var string
 	 */
-	protected $_lang = 'en-GB';
+	protected $_charset = null;
 
 	/**
-	 * The version of VoiceXML of this document
+	 * Sets the vars src
 	 *
-	 * @var string
-	 */
-	protected $_version = null;
-
-	/**
-	 * Child elements
-	 *
-	 * @var array
-	 */
-	protected $_children = array();
-
-	/**
-	 * Sets the application/root document
-	 *
-	 * @param string $application The root document
+	 * @param string $src the variable src
 	 *
 	 * @return void
 	 */
-	public function setApplication($application)
+	public function setSrc($src)
 	{
-		$this->_application = $application;
+		$this->_src = $src;
 	}
 
 	/**
-	 * Returns the root document
+	 * Gets the variable src
 	 *
-	 * @return string The root document
+	 * @return string The variables src
 	 */
-	public function getApplication()
+	public function getSrc()
 	{
-		return $this->_application;
+		return $this->_src;
 	}
 
 	/**
-	 * Sets base Uri
+	 * Sets the srcexpr
 	 *
-	 * @param string $base The base uri
+	 * @param string $srcexpr
+	 *
+	 * @return void
 	 */
-	public function setBase($base)
+	public function setSrcexpr($srcexpr)
 	{
-		$this->_base = $base;
+		$this->_srcexpr = $srcexpr;
 	}
 
 	/**
-	 * Gets base uri
+	 * Gets the srcexpr
 	 *
-	 * @return string The base uri
+	 * @return string The ECMAScript srcexpression
 	 */
-	public function getBase()
+	public function getSrcexpr()
 	{
-		return $this->_base;
+		return $this->_srcexpr;
 	}
 
 	/**
-	 * Sets the language
+	 * Sets the http-equiv
 	 *
-	 * @param string $lang The language
+	 * @param string $charset
+	 *
+	 * @return void
 	 */
-	public function setLang($lang)
+	public function setCharset($charset)
 	{
-		$this->_lang = $lang;
+		$this->_charset = $charset;
 	}
 
 	/**
-	 * Gets the language
+	 * Gets the srcexpr
 	 *
-	 * @return string The language
+	 * @return string The ECMAScript srcexpression
 	 */
-	public function getLang()
+	public function getCharset()
 	{
-		return $this->_lang;
-	}
-
-	/**
-	 * Sets the version
-	 *
-	 * @param string $version The version
-	 */
-	public function setVersion($version)
-	{
-		$this->_version = $version;
-	}
-
-	/**
-	 * Gets the version
-	 *
-	 * @return string The version
-	 */
-	public function getVersion()
-	{
-		return $this->_version;
-	}
-
-	/**
-	 * Gets the number of children
-	 *
-	 * @return integer the number of children
-	 */
-	public function numChildren()
-	{
-		return count($this->_children);
-	}
-
-	/**
-	 * Adds a child to the document
-	 *
-	 * @param Structrure\VxmlChild $child A child element
-	 */
-	public function addChild(Structure\VxmlChild $child)
-	{
-		$this->_children[] = $child;
+		return $this->_charset;
 	}
 }
