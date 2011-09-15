@@ -21,4 +21,11 @@ class VxmlChildTest extends \PHPUnit_Framework_TestCase
 		$child = $this->getMock('\Vxml\Property');
 		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
 	}
+
+	public function testMetaImplementsVxmlChild()
+	{
+		$child = $this->getMock('\Vxml\Meta');
+		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
+	}
+
 }

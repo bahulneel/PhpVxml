@@ -48,27 +48,34 @@ namespace Vxml;
 /**
  * Vxml Var
  *
- * Names Property as Var is a reserved word
+ * Names Meta as Var is a reserved word
  *
  * @category PhpVxml
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Property implements Structure\VxmlChild
+class Meta implements Structure\VxmlChild
 {
 	/**
-	 * Property Name
+	 * Meta Name
 	 *
 	 * @var string
 	 */
 	protected $_name = null;
 
 	/**
-	 * Property Value
+	 * Meta content
 	 *
 	 * @var string
 	 */
-	protected $_value = null;
+	protected $_content = null;
+
+	/**
+	 * Meta http-equiv
+	 *
+	 * @var string
+	 */
+	protected $_httpEquiv = null;
 
 	/**
 	 * Sets the vars name
@@ -93,24 +100,46 @@ class Property implements Structure\VxmlChild
 	}
 
 	/**
-	 * Sets the value
+	 * Sets the content
 	 *
-	 * @param string $value
+	 * @param string $content
 	 *
 	 * @return void
 	 */
-	public function setValue($value)
+	public function setContent($content)
 	{
-		$this->_value = $value;
+		$this->_content = $content;
 	}
 
 	/**
-	 * Gets the value
+	 * Gets the content
 	 *
-	 * @return string The ECMAScript valueession
+	 * @return string The ECMAScript contentession
 	 */
-	public function getValue()
+	public function getContent()
 	{
-		return $this->_value;
+		return $this->_content;
+	}
+
+	/**
+	 * Sets the http-equiv
+	 *
+	 * @param string $httpEquiv
+	 *
+	 * @return void
+	 */
+	public function setHttpEquiv($httpEquiv)
+	{
+		$this->_httpEquiv = $httpEquiv;
+	}
+
+	/**
+	 * Gets the content
+	 *
+	 * @return string The ECMAScript contentession
+	 */
+	public function getHttpEquiv()
+	{
+		return $this->_httpEquiv;
 	}
 }
