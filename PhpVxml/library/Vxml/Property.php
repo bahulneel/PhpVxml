@@ -46,152 +46,71 @@
 namespace Vxml;
 
 /**
- * Vxml Document
+ * Vxml Var
+ *
+ * Names Property as Var is a reserved word
  *
  * @category PhpVxml
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Vxml
+class Property implements Structure\VxmlChild
 {
 	/**
-	 * The URI of this document's application root document, if any
+	 * Property Name
 	 *
 	 * @var string
 	 */
-	protected $_application = null;
+	protected $_name = null;
 
 	/**
-	 * The base URI for this document
-	 *
-	 * A URI which all relative references within the document take as their base.
+	 * ECMAScript valueession
 	 *
 	 * @var string
 	 */
-	protected $_base = null;
+	protected $_value = null;
 
 	/**
-	 * The language identifier for this document.
+	 * Sets the vars name
 	 *
-	 * If omitted, the value is a platform-specific default.
-	 *
-	 * @var string
-	 */
-	protected $_lang = 'en-GB';
-
-	/**
-	 * The version of VoiceXML of this document
-	 *
-	 * @var string
-	 */
-	protected $_version = null;
-
-	/**
-	 * Child elements
-	 *
-	 * @var array
-	 */
-	protected $_children = array();
-
-	/**
-	 * Sets the application/root document
-	 *
-	 * @param string $application The root document
+	 * @param string $name the variable name
 	 *
 	 * @return void
 	 */
-	public function setApplication($application)
+	public function setName($name)
 	{
-		$this->_application = $application;
+		$this->_name = $name;
 	}
 
 	/**
-	 * Returns the root document
+	 * Gets the variable name
 	 *
-	 * @return string The root document
+	 * @return string The variables name
 	 */
-	public function getApplication()
+	public function getName()
 	{
-		return $this->_application;
+		return $this->_name;
 	}
 
 	/**
-	 * Sets base Uri
+	 * Sets the value
 	 *
-	 * @param string $base The base uri
+	 * @param string $value
+	 *
+	 * @return void
 	 */
-	public function setBase($base)
+	public function setValue($value)
 	{
-		$this->_base = $base;
+		$this->_value = $value;
 	}
 
 	/**
-	 * Gets base uri
+	 * Gets the value
 	 *
-	 * @return string The base uri
+	 * @return string The ECMAScript valueession
 	 */
-	public function getBase()
+	public function getValue()
 	{
-		return $this->_base;
-	}
-
-	/**
-	 * Sets the language
-	 *
-	 * @param string $lang The language
-	 */
-	public function setLang($lang)
-	{
-		$this->_lang = $lang;
-	}
-
-	/**
-	 * Gets the language
-	 *
-	 * @return string The language
-	 */
-	public function getLang()
-	{
-		return $this->_lang;
-	}
-
-	/**
-	 * Sets the version
-	 *
-	 * @param string $version The version
-	 */
-	public function setVersion($version)
-	{
-		$this->_version = $version;
-	}
-
-	/**
-	 * Gets the version
-	 *
-	 * @return string The version
-	 */
-	public function getVersion()
-	{
-		return $this->_version;
-	}
-
-	/**
-	 * Gets the number of children
-	 *
-	 * @return integer the number of children
-	 */
-	public function numChildren()
-	{
-		return count($this->_children);
-	}
-
-	/**
-	 * Adds a child to the document
-	 *
-	 * @param Structrure\VxmlChild $child A child element
-	 */
-	public function addChild(Structure\VxmlChild $child)
-	{
-		$this->_children[] = $child;
+		return $this->_value;
 	}
 }
