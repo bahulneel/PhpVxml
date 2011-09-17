@@ -2,7 +2,9 @@
 
 namespace Vxml\Structure;
 
-interface VxmlChild
+use Vxml\Document\Element;
+
+interface VxmlChild extends Element
 {
 
 }

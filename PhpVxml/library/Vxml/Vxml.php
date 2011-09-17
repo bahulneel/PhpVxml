@@ -52,7 +52,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Vxml extends Structure\Element_Node
+class Vxml extends Node
 {
 	/**
 	 * The URI of this document's application root document, if any

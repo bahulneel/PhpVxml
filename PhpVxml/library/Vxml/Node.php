@@ -1,12 +1,16 @@
 <?php
 
-abstract class Element_Node
+namespace Vxml;
+
+use Vxml\Document\Element;
+
+abstract class Node implements Document\Element_Node
 {
 	/**
-	 * Child elements
-	 *
-	 * @var array
-	 */
+	* Child elements
+	*
+	* @var array
+	*/
 	protected $_children = array();
 
 	/**
@@ -14,7 +18,7 @@ abstract class Element_Node
 	 *
 	 * @return integer the number of children
 	 */
-	public function numChildren()
+	public function count()
 	{
 		return count($this->_children);
 	}
@@ -24,7 +28,7 @@ abstract class Element_Node
 	 *
 	 * @param Structrure\VxmlChild $child A child element
 	 */
-	public function addChild(Structure\VxmlChild $child)
+	public function addChild(Element $child)
 	{
 		$this->_children[] = $child;
 	}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vxml\Structure;
+namespace Vxml\Document;
 
 interface Element
 {

@@ -54,7 +54,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Meta implements Structure\VxmlChild
+class Meta implements Document\Element_Leaf, Structure\VxmlChild
 {
 	/**
 	 * Meta Name
