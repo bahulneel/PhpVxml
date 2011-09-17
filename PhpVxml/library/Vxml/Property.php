@@ -45,6 +45,8 @@
 
 namespace Vxml;
 
+use Vxml\Structure\MenuChild;
+
 use Vxml\Structure\FormChild;
 
 use Vxml\Structure\VxmlChild;
@@ -58,7 +60,7 @@ use Vxml\Structure\VxmlChild;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Property implements Document\Leaf, VxmlChild, FormChild
+class Property implements Document\Leaf, VxmlChild, FormChild, MenuChild
 {
 	/**
 	 * Property Name

@@ -20,10 +20,9 @@ class MenuTest extends TestCase
 		$children = array(
 			'Audio',
 			'Choice',
-			'Catch',
 			'Enumerate',
-			'Help',
 			'EventHandler',
+			'Help',
 			'Property',
 			'Prompt',
 			'Value'
