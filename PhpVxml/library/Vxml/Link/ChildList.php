@@ -56,5 +56,5 @@ use Vxml\Document\NodeList;
 */
 class ChildList extends NodeList
 {
-	protected $_acceptInterface = 'Vxml\Structure\LinkChild';
+	protected $_acceptInterface = 'Vxml\Document\Structure\LinkChild';
 }

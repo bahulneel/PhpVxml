@@ -45,7 +45,7 @@
 
 namespace Vxml;
 
-use Vxml\Structure\VxmlChild;
+use Vxml\Document\Structure\VxmlChild;
 
 use Vxml\Menu\ChildList;
 

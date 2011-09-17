@@ -37,26 +37,26 @@
 * POSSIBILITY OF SUCH DAMAGE.
 *
 * @category PhpVxml
-* @package Vxml\Structure
+* @package Vxml\Document\Structure
 * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
 * @copyright  2011 Bahul Neel Upadhyaya <bahulneel@gmail.com>
 * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
 */
 
-namespace Vxml\Structure;
+namespace Vxml\Document\Structure;
 
 use Vxml\Document\Element;
 
 /**
-* Form Child Interface
+* EventHandler Child Interface
 *
-* Elements that can be added to a Form element must implement this interface
+* Elements that can be added to a EventHandler element must implement this interface
 *
 * @category PhpVxml
-* @package Vxml\Structure
+* @package Vxml\Document\Structure
 * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
 */
-interface FormChild extends Element
+interface EventHandlerChild extends Element
 {
 
 }

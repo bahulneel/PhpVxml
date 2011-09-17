@@ -23,7 +23,7 @@ class ChildListTest extends \PHPUnit_Framework_TestCase
 
 	public function testCanAddAEventHandlerChild()
 	{
-		$child = $this->getMock('\Vxml\Structure\EventHandlerChild');
+		$child = $this->getMock('\Vxml\Document\Structure\EventHandlerChild');
 		$this->_childList[] = $child;
 		$this->assertSame($child, $this->_childList[0]);
 	}

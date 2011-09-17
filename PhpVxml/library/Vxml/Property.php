@@ -45,11 +45,11 @@
 
 namespace Vxml;
 
-use Vxml\Structure\MenuChild;
+use Vxml\Document\Structure\MenuChild;
 
-use Vxml\Structure\FormChild;
+use Vxml\Document\Structure\FormChild;
 
-use Vxml\Structure\VxmlChild;
+use Vxml\Document\Structure\VxmlChild;
 
 /**
  * Vxml Var

@@ -37,26 +37,26 @@
 * POSSIBILITY OF SUCH DAMAGE.
 *
 * @category PhpVxml
-* @package Vxml\Structure
+* @package Vxml\Document\Structure
 * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
 * @copyright  2011 Bahul Neel Upadhyaya <bahulneel@gmail.com>
 * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
 */
 
-namespace Vxml\Structure;
+namespace Vxml\Document\Structure;
 
 use Vxml\Document\Element;
 
 /**
-* Vxml Child Interface
+* Form Child Interface
 *
-* Elements that can be added to a Vxml element must implement this interface
+* Elements that can be added to a Form element must implement this interface
 *
 * @category PhpVxml
-* @package Vxml\Structure
+* @package Vxml\Document\Structure
 * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
 */
-interface VxmlChild extends Element
+interface FormChild extends Element
 {
 
 }

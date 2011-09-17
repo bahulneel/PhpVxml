@@ -45,6 +45,8 @@
 
 namespace Vxml;
 
+use Vxml\Document\Structure\VxmlChild;
+
 /**
  * Vxml Var
  *
@@ -54,7 +56,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Meta implements Document\Leaf, Structure\VxmlChild
+class Meta implements Document\Leaf, VxmlChild
 {
 	/**
 	 * Meta Name

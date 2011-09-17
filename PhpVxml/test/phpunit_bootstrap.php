@@ -15,7 +15,11 @@ function autoload($className)
     }
     $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
 
-    require __DIR__ . '/../library/' . $fileName;
+    $filePath = __DIR__ . '/../library/' . $fileName;
+    if (!file_exists($filePath)) {
+    	throw new Exception($filePath . ' Not Found');
+    }
+    require $filePath;
 }
 
 spl_autoload_register('autoload');

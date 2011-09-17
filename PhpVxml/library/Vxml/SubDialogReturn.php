@@ -45,7 +45,7 @@
 
 namespace Vxml;
 
-use Vxml\Structure\EventHandlerChild;
+use Vxml\Document\Structure\EventHandlerChild;
 
 use Vxml\Document\Leaf;
 

@@ -1,33 +1,38 @@
 <?php
 
-namespace Vxml\Structure;
+namespace Vxml\Document\Structure;
 
 require_once 'TestCase.php';
 
 /**
 * @group structure
 */
-class VxmlChildTest extends TestCase
+class FormTest extends TestCase
 {
 
 	public function getChildName()
 	{
-		return 'VxmlChild';
+		return 'FormChild';
 	}
 
 	public function getChildren()
 	{
 		$children = array(
+			'Block',
 			'Data',
 			'EventHandler',
-			'Form',
+			'Field',
+			'Filled',
+			'Grammar',
+			'Initial',
 			'Link',
-			'Menu',
-			'Meta',
-			'MetaData',
+			'Object',
 			'Property',
+			'Record',
 			'Script',
-			'Variable'
+			'Subdialog',
+			'Transfer',
+			'Variable',
 		);
 		$params = array();
 		foreach ($children as $child) {

@@ -23,7 +23,7 @@ class ChildListTest extends \PHPUnit_Framework_TestCase
 
 	public function testCanAddAVxmlChild()
 	{
-		$child = $this->getMock('\Vxml\Structure\VxmlChild');
+		$child = $this->getMock('\Vxml\Document\Structure\VxmlChild');
 		$this->_childList[] = $child;
 		$this->assertSame($child, $this->_childList[0]);
 	}

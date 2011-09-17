@@ -37,26 +37,26 @@
 * POSSIBILITY OF SUCH DAMAGE.
 *
 * @category PhpVxml
-* @package Vxml\Structure
+* @package Vxml\Document\Structure
 * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
 * @copyright  2011 Bahul Neel Upadhyaya <bahulneel@gmail.com>
 * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
 */
 
-namespace Vxml\Structure;
+namespace Vxml\Document\Structure;
 
 use Vxml\Document\Element;
 
 /**
-* Link Child Interface
+* Menu Child Interface
 *
-* Elements that can be added to a Link element must implement this interface
+* Elements that can be added to a Menu element must implement this interface
 *
 * @category PhpVxml
-* @package Vxml\Structure
+* @package Vxml\Document\Structure
 * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
 */
-interface LinkChild extends Element
+interface MenuChild extends Element
 {
 
 }

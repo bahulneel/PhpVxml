@@ -1,6 +1,6 @@
 <?php
 
-namespace Vxml\Structure;
+namespace Vxml\Document\Structure;
 
 require_once 'TestCase.php';
 

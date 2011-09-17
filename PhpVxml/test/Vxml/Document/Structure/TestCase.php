@@ -1,6 +1,6 @@
 <?php
 
-namespace Vxml\Structure;
+namespace Vxml\Document\Structure;
 
 /**
  * @group structure
@@ -21,6 +21,6 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
 		}
 		$child = $this->getMock('\Vxml\\' . $childName);
 		$name = $this->getChildName();
-		$this->assertInstanceOf('\Vxml\Structure\\' . $name, $child);
+		$this->assertInstanceOf('\Vxml\Document\Structure\\' . $name, $child);
 	}
 }
