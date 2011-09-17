@@ -31,7 +31,7 @@ class EventHandlerTest extends TestCase
 			'Log',
 			'Prompt',
 			'RePrompt',
-			'Return',
+			'SubDialogReturn',
 			'Script',
 			'Submit',
 			'EventThrow',
