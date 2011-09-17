@@ -50,7 +50,7 @@ use Vxml\Structure\EventHandlerChild;
 use Vxml\Document\Leaf;
 
 /**
- * Vxml Throw
+ * Vxml RePrompt
  *
  * @category PhpVxml
  * @package Vxml
