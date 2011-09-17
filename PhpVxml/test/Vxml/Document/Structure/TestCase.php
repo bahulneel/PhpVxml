@@ -15,7 +15,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
 	*/
 	public function testChildImplementsElementChild($childName)
 	{
-		$elementFile = dirname(__FILE__) . '/../../../library/Vxml/' . $childName . '.php';
+		$elementFile = dirname(__FILE__) . '/../../../../library/Vxml/' . $childName . '.php';
 		if (!file_exists($elementFile)) {
 			$this->markTestIncomplete($childName . ' not yet implemented');
 		}
