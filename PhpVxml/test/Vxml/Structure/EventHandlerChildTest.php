@@ -24,7 +24,7 @@ class EventHandlerTest extends TestCase
 			'Data',
 			'Disconnect',
 			'Ennumerate',
-			'Exit',
+			'DialogExit',
 			'ForEach',
 			'Goto',
 			'If',
