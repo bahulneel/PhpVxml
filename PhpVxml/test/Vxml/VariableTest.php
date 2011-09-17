@@ -17,6 +17,11 @@ class VariableTest extends \PHPUnit_Framework_TestCase
 		$this->_var = $var;
 	}
 
+	public function testIsALeaf()
+	{
+		$this->assertInstanceOf('Vxml\Document\Leaf', $this->_var);
+	}
+
 	public function testSetGetName()
 	{
 		$name = "myVariable";

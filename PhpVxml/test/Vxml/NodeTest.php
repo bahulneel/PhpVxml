@@ -17,6 +17,12 @@ class NodeTest extends \PHPUnit_Framework_TestCase
 		$this->_node = $node;
 	}
 
+
+	public function testIsANode()
+	{
+		$this->assertInstanceOf('Vxml\Document\Node', $this->_node);
+	}
+
 	public function testChildrenImplementsNoseList()
 	{
 		$this->assertInstanceOf('Vxml\Document\NodeList', $this->_node->getChildren());

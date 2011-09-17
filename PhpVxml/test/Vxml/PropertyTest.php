@@ -17,6 +17,11 @@ class PropertyTest extends \PHPUnit_Framework_TestCase
 		$this->_property = $property;
 	}
 
+	public function testIsALeaf()
+	{
+		$this->assertInstanceOf('Vxml\Document\Leaf', $this->_property);
+	}
+
 	public function testSetGetName()
 	{
 		$name = "myProperty";

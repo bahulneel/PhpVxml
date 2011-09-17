@@ -17,6 +17,11 @@ class MetaTest extends \PHPUnit_Framework_TestCase
 		$this->_meta = $meta;
 	}
 
+	public function testIsALeaf()
+	{
+		$this->assertInstanceOf('Vxml\Document\Leaf', $this->_meta);
+	}
+
 	public function testSetGetName()
 	{
 		$name = "myMeta";
