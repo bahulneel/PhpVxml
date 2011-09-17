@@ -37,4 +37,6 @@ class ScriptTest extends \PHPUnit_Framework_TestCase
 		$this->_script->setCharset($charset);
 		$this->assertEquals($charset, $this->_script->getCharset());
 	}
+
+	// @TODO allow cdata/body
 }
