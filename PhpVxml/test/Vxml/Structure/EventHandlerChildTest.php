@@ -34,7 +34,7 @@ class EventHandlerTest extends TestCase
 			'Return',
 			'Script',
 			'Submit',
-			'Throw',
+			'EventThrow',
 			'Variable',
 			'Value'
 		);
