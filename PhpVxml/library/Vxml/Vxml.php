@@ -45,6 +45,8 @@
 
 namespace Vxml;
 
+use Vxml\Vxml\ChildList;
+
 /**
  * Vxml Document
  *
@@ -85,6 +87,14 @@ class Vxml extends Node
 	 * @var string
 	 */
 	protected $_version = null;
+
+	/**
+	* Constructor
+	*/
+	public function __construct()
+	{
+		$this->_children = new ChildList();
+	}
 
 	/**
 	 * Sets the application/root document

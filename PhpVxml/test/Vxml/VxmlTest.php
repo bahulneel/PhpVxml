@@ -44,4 +44,10 @@ class VxmlTest extends \PHPUnit_Framework_TestCase
 		$this->_vxml->setVersion($version);
 		$this->assertEquals($version, $this->_vxml->getVersion());
 	}
+
+	public function testChildrenImplentChildList()
+	{
+		$nodeList = $this->_vxml->getChildren();
+		$this->assertInstanceOf('Vxml\vxml\ChildList', $nodeList);
+	}
 }
