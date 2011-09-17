@@ -78,7 +78,7 @@ class Coverage_Project
 		$this->printCol($name, 50);
 		foreach ($stats as $stat) {
 			if (is_numeric($stat) && $stat >= 0 && $stat <= 1) {
-				$stat = number_format($stat, 2) . '%';
+				$stat = number_format(100* $stat, 2) . '%';
 			}
 			$this->printCol($stat, 13);
 		}
