@@ -5,12 +5,12 @@ namespace Vxml;
 use Vxml\Document\Element;
 use Vxml\Document\NodeList;
 
-abstract class Node implements Document\Node
+class Node implements Document\Node
 {
 	/**
 	* Child elements
 	*
-	* @var \Vxml\Document\NodeList
+	* @var Vxml\Document\NodeList
 	*/
 	protected $_children = null;
 
@@ -37,5 +37,15 @@ abstract class Node implements Document\Node
 	public function addChild(Element $child)
 	{
 		$this->_children[] = $child;
+	}
+
+	/**
+	 * Get the list of children
+	 *
+	 * @return Vxml\Document\NodeList
+	 */
+	public function getChildren()
+	{
+		return $this->_children;
 	}
 }

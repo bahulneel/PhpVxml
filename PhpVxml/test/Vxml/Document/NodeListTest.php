@@ -5,9 +5,9 @@ namespace Vxml\Document;
 class NodeListTest extends \PHPUnit_Framework_TestCase
 {
 	/**
-	* VXML Document
+	* NodeList
 	*
-	* @var NodeList\NodeList
+	* @var Vxml\Document\NodeList
 	*/
 	protected $_nodeList = null;
 
