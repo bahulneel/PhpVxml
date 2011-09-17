@@ -23,6 +23,7 @@ class EventHandlerTest extends TestCase
 			'Clear',
 			'Data',
 			'Disconnect',
+			'Ennumerate',
 			'Exit',
 			'ForEach',
 			'Goto',
@@ -35,6 +36,7 @@ class EventHandlerTest extends TestCase
 			'Submit',
 			'Throw',
 			'Variable',
+			'Value'
 		);
 		$params = array();
 		foreach ($children as $child) {
@@ -42,7 +44,4 @@ class EventHandlerTest extends TestCase
 		}
 		return $params;
 	}
-
-
-
 }
