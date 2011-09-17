@@ -54,7 +54,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Property implements Document\Element_Leaf, Structure\VxmlChild
+class Property implements Document\Leaf, Structure\VxmlChild
 {
 	/**
 	 * Property Name

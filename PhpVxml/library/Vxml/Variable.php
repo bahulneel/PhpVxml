@@ -54,7 +54,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Variable implements Document\Element_Leaf, Structure\VxmlChild
+class Variable implements Document\Leaf, Structure\VxmlChild
 {
 	/**
 	 * Variable Name

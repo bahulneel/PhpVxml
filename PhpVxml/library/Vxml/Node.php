@@ -3,15 +3,21 @@
 namespace Vxml;
 
 use Vxml\Document\Element;
+use Vxml\Document\NodeList;
 
-abstract class Node implements Document\Element_Node
+abstract class Node implements Document\Node
 {
 	/**
 	* Child elements
 	*
-	* @var array
+	* @var \Vxml\Document\NodeList
 	*/
-	protected $_children = array();
+	protected $_children = null;
+
+	public function __construct()
+	{
+		$this->_children = new NodeList();
+	}
 
 	/**
 	 * Gets the number of children
