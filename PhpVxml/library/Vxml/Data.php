@@ -45,6 +45,10 @@
 
 namespace Vxml;
 
+use Vxml\Structure\EventHandlerChild;
+
+use Vxml\Structure\FormChild;
+
 use Vxml\Structure\VxmlChild;
 
 /**
@@ -54,7 +58,7 @@ use Vxml\Structure\VxmlChild;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Data implements Document\Leaf, VxmlChild
+class Data implements Document\Leaf, VxmlChild, FormChild, EventHandlerChild
 {
 	/**
 	 * Data Name
