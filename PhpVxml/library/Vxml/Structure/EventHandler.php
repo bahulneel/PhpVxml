@@ -45,6 +45,15 @@
 
 namespace Vxml\Structure;
 
+/**
+* Vxml Event Handler Interface
+*
+* All event handler elements must implement this interface
+*
+* @category PhpVxml
+* @package Vxml\Structure
+* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+*/
 interface EventHandler extends VxmlChild
 {
 

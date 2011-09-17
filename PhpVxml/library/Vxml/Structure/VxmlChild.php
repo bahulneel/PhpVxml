@@ -47,6 +47,15 @@ namespace Vxml\Structure;
 
 use Vxml\Document\Element;
 
+/**
+* Vxml Child Interface
+*
+* Elements that can be added to a Vxml element must implement this interface
+*
+* @category PhpVxml
+* @package Vxml\Structure
+* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+*/
 interface VxmlChild extends Element
 {
 

@@ -45,6 +45,13 @@
 
 namespace Vxml\Document;
 
+/**
+* Vxml Document Node Element
+**
+* @category PhpVxml
+* @package Vxml\Document
+* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+*/
 interface Element
 {
 

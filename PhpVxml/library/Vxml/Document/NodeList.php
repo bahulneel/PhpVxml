@@ -45,6 +45,13 @@
 
 namespace Vxml\Document;
 
+/**
+* Vxml Document Node List
+*
+* @category PhpVxml
+* @package Vxml\Document
+* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+*/
 class NodeList extends \ArrayObject
 {
 	protected $_acceptInterface = 'Vxml\Document\Element';

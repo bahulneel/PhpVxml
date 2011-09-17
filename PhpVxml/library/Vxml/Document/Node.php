@@ -45,6 +45,15 @@
 
 namespace Vxml\Document;
 
+/**
+* Vxml Document Node Element
+*
+* A Vxml Element that can have child elements
+*
+* @category PhpVxml
+* @package Vxml\Document
+* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+*/
 interface Node extends Element, \Countable
 {
 	/**

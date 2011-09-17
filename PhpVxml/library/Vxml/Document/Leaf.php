@@ -45,6 +45,15 @@
 
 namespace Vxml\Document;
 
+/**
+* Vxml Document Leaf Element
+*
+* A Vxml Element that cannot have child elements
+*
+* @category PhpVxml
+* @package Vxml\Document
+* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+*/
 interface Leaf extends Element
 {
 

@@ -48,6 +48,13 @@ namespace Vxml;
 use Vxml\Document\Element;
 use Vxml\Document\NodeList;
 
+/**
+* Vxml Document Node
+*
+* @category PhpVxml
+* @package Vxml
+* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+*/
 class Node implements Document\Node
 {
 	/**
