@@ -8,9 +8,9 @@
          syntaxCheck="true"
          verbose="true"
          strict="true">
-         <filter>
-		<whitespace>
+	<filter>
+		<whitelist addUncoveredFilesFromWhitelist="true">
 			<dir suffix=".php">../library</dir>
-		</whitespace>
+		</whitelist>
 	</filter>
 </phpunit>
