@@ -7,19 +7,19 @@ class DisconnectTest extends \PHPUnit_Framework_TestCase
 	/**
 	 * VXML Document Disconnect
 	 *
-	 * @clear Vxml\Disconnect
+	 * @disconnect Vxml\Disconnect
 	 */
-	protected $_clear = null;
+	protected $_disconnect = null;
 
 	public function setUp()
 	{
-		$clear = new Disconnect();
-		$this->_clear = $clear;
+		$disconnect = new Disconnect();
+		$this->_disconnect = $disconnect;
 	}
 
 	public function testIsALeaf()
 	{
-		$this->assertInstanceOf('Vxml\Document\Leaf', $this->_clear);
+		$this->assertInstanceOf('Vxml\Document\Leaf', $this->_disconnect);
 	}
 
 	// @TODO namelist attribute
