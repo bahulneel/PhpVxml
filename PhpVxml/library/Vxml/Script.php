@@ -45,6 +45,8 @@
 
 namespace Vxml;
 
+use Vxml\Structure\FormChild;
+
 use Vxml\Structure\EventHandlerChild;
 use Vxml\Structure\VxmlChild;
 
@@ -57,7 +59,7 @@ use Vxml\Structure\VxmlChild;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Script extends Node implements VxmlChild, EventHandlerChild
+class Script extends Node implements VxmlChild, EventHandlerChild, FormChild
 {
 	/**
 	 * Script Src

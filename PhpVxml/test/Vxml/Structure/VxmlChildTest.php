@@ -2,36 +2,40 @@
 
 namespace Vxml\Structure;
 
-class VxmlChildTest extends \PHPUnit_Framework_TestCase
+require_once 'TestCase.php';
+
+/**
+* @group structure
+*/
+class VxmlChildTest extends TestCase
 {
-	public function testEventHandlerImplementsVxmlChild()
+
+	public function getChildName()
 	{
-		$child = $this->getMock('\Vxml\Structure\EventHandler');
-		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
+		return 'VxmlChild';
 	}
 
-	public function testVariableImplementsVxmlChild()
+	public function getChildren()
 	{
-		$child = $this->getMock('\Vxml\Variable');
-		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
+		$children = array(
+			'Data',
+			'EventHandler',
+			'Form',
+			'Link',
+			'Menu',
+			'Meta',
+			'MetaData',
+			'Property',
+			'Script',
+			'Variable'
+		);
+		$params = array();
+		foreach ($children as $child) {
+			$params[] = array($child);
+		}
+		return $params;
 	}
 
-	public function testPropertyImplementsVxmlChild()
-	{
-		$child = $this->getMock('\Vxml\Property');
-		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
-	}
 
-	public function testMetaImplementsVxmlChild()
-	{
-		$child = $this->getMock('\Vxml\Meta');
-		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
-	}
-
-	public function testScriptImplementsVxmlChild()
-	{
-		$child = $this->getMock('\Vxml\Script');
-		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
-	}
 
 }

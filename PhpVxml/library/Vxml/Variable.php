@@ -45,6 +45,8 @@
 
 namespace Vxml;
 
+use Vxml\Structure\FormChild;
+
 use Vxml\Structure\VxmlChild;
 
 use Vxml\Structure\EventHandlerChild;
@@ -58,7 +60,7 @@ use Vxml\Structure\EventHandlerChild;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Variable implements Document\Leaf, VxmlChild, EventHandlerChild
+class Variable implements Document\Leaf, VxmlChild, EventHandlerChild, FormChild
 {
 	/**
 	 * Variable Name

@@ -45,6 +45,10 @@
 
 namespace Vxml;
 
+use Vxml\Structure\FormChild;
+
+use Vxml\Structure\VxmlChild;
+
 /**
  * Vxml Var
  *
@@ -54,7 +58,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Property implements Document\Leaf, Structure\VxmlChild
+class Property implements Document\Leaf, VxmlChild, FormChild
 {
 	/**
 	 * Property Name

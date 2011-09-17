@@ -45,6 +45,8 @@
 
 namespace Vxml;
 
+use Vxml\Structure\VxmlChild;
+
 use Vxml\Form\ChildList;
 
 /**
@@ -54,7 +56,7 @@ use Vxml\Form\ChildList;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Form extends Node
+class Form extends Node implements VxmlChild
 {
 	/**
 	 * The forms id
