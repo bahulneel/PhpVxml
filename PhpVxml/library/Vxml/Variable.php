@@ -45,6 +45,10 @@
 
 namespace Vxml;
 
+use Vxml\Structure\VxmlChild;
+
+use Vxml\Structure\EventHandlerChild;
+
 /**
  * Vxml Var
  *
@@ -54,7 +58,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Variable implements Document\Leaf, Structure\VxmlChild
+class Variable implements Document\Leaf, VxmlChild, EventHandlerChild
 {
 	/**
 	 * Variable Name

@@ -34,5 +34,4 @@ class VxmlChildTest extends \PHPUnit_Framework_TestCase
 		$this->assertInstanceOf('\Vxml\Structure\VxmlChild', $child);
 	}
 
-
 }

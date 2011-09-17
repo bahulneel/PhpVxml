@@ -17,6 +17,17 @@ class VxmlTest extends \PHPUnit_Framework_TestCase
 		$this->_vxml = $vxml;
 	}
 
+	public function testIsANode()
+	{
+		$this->assertInstanceOf('Vxml\Node', $this->_vxml);
+	}
+
+	public function testChildrenImplentChildList()
+	{
+		$nodeList = $this->_vxml->getChildren();
+		$this->assertInstanceOf('Vxml\Vxml\ChildList', $nodeList);
+	}
+
 	public function testSetGetApplication()
 	{
 		$application = 'http://www.example.com/root.vxml';
@@ -43,11 +54,5 @@ class VxmlTest extends \PHPUnit_Framework_TestCase
 		$version = '2.1';
 		$this->_vxml->setVersion($version);
 		$this->assertEquals($version, $this->_vxml->getVersion());
-	}
-
-	public function testChildrenImplentChildList()
-	{
-		$nodeList = $this->_vxml->getChildren();
-		$this->assertInstanceOf('Vxml\vxml\ChildList', $nodeList);
 	}
 }

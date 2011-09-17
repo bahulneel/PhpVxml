@@ -45,6 +45,9 @@
 
 namespace Vxml;
 
+use Vxml\Structure\EventHandlerChild;
+use Vxml\Structure\VxmlChild;
+
 /**
  * Vxml Var
  *
@@ -54,7 +57,7 @@ namespace Vxml;
  * @package Vxml
  * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
  */
-class Script extends Node implements Structure\VxmlChild
+class Script extends Node implements VxmlChild, EventHandlerChild
 {
 	/**
 	 * Script Src
