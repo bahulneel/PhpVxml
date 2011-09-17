@@ -43,18 +43,80 @@
 * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
 */
 
-namespace Vxml\EventHandler;
+namespace Vxml;
 
-use Vxml\Document\NodeList;
+use Vxml\Form\ChildList;
 
 /**
-* EventHandler Child Node List
-*
-* @category PhpVxml
-* @package Vxml
-* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
-*/
-class ChildList extends NodeList
+ * Vxml Form
+ *
+ * @category PhpVxml
+ * @package Vxml
+ * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+ */
+class Form extends Node
 {
-	protected $_acceptInterface = 'Vxml\Structure\EventHandlerChild';
+	/**
+	 * The forms id
+	 *
+	 * @var string
+	 */
+	protected $_id = null;
+
+	/**
+	 * The form scope
+	 *
+	 * @var string
+	 */
+	protected $_scope = null;
+
+	/**
+	 * Constructor
+	 */
+	public function __construct()
+	{
+		$this->_children = new ChildList();
+	}
+
+	/**
+	 * Sets the id
+	 *
+	 * @param string $id The id to set
+	 *
+	 * @return void
+	 */
+	public function setId($id)
+	{
+		$this->_id = $id;
+	}
+
+	/**
+	 * Gets the Id
+	 *
+	 * @return string The forms id
+	 */
+	public function getId()
+	{
+		return $this->_id;
+	}
+
+	/**
+	 * Sets the form's scope
+	 *
+	 * @param string $scope The form's scope
+	 */
+	public function setScope($scope)
+	{
+		$this->_scope = $scope;
+	}
+
+	/**
+	 * Gets the form's scope
+	 *
+	 * @return string The forms scope
+	 */
+	public function getScope()
+	{
+		return $this->_scope;
+	}
 }

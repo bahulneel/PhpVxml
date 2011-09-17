@@ -43,12 +43,12 @@
 * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
 */
 
-namespace Vxml\EventHandler;
+namespace Vxml\Form;
 
 use Vxml\Document\NodeList;
 
 /**
-* EventHandler Child Node List
+* Form Child Node List
 *
 * @category PhpVxml
 * @package Vxml
@@ -56,5 +56,5 @@ use Vxml\Document\NodeList;
 */
 class ChildList extends NodeList
 {
-	protected $_acceptInterface = 'Vxml\Structure\EventHandlerChild';
+	protected $_acceptInterface = 'Vxml\Structure\FormChild';
 }

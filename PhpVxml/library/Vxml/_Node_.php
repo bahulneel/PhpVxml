@@ -43,18 +43,24 @@
 * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
 */
 
-namespace Vxml\EventHandler;
+namespace Vxml;
 
-use Vxml\Document\NodeList;
+use Vxml\_Node_\ChildList;
 
 /**
-* EventHandler Child Node List
-*
-* @category PhpVxml
-* @package Vxml
-* @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
-*/
-class ChildList extends NodeList
+ * Vxml _Node_
+ *
+ * @category PhpVxml
+ * @package Vxml
+ * @author Bahul Neel Upadhyaya <bahulneel@gmail.com>
+ */
+class _Node_ extends Node
 {
-	protected $_acceptInterface = 'Vxml\Structure\EventHandlerChild';
+	/**
+	 * Constructor
+	 */
+	public function __construct()
+	{
+		$this->_children = new ChildList();
+	}
 }
