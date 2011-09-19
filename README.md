@@ -4,6 +4,7 @@ PhpVxml
 The PhpVxml project is an attempt to implement the [VoiceXML 2.0](http://www.w3.org/TR/voicexml20/) and [VoiceXML 2.1](http://www.w3.org/TR/voicexml21/) W3C standards entirely in PHP.
 
 When complete it will consist of the following sub-components:
+
  1. PhpVxml - PHP VXML Parser/Generator
  2. PhpVxml\Lint - VXML lint/static analysis tool
  3. PhpVxml\Unit - VXML Unit testing framework
